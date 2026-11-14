@@ -4,7 +4,7 @@ One WordPress plugin that powers the public homepage at **TNRDevelopment.com**.
 
 ## Current baseline
 
-**Version 1.3.1** — imported from the existing PHP source. This commit preserves the baseline; it does **not** include the proposed Latest Posts section.
+**Version 1.3.2** — imported from the existing PHP source. This commit preserves the baseline; it does **not** include the proposed Latest Posts section.
 
 ### Included functionality
 
@@ -13,6 +13,8 @@ One WordPress plugin that powers the public homepage at **TNRDevelopment.com**.
 - Customer reviews section configurable under **Settings → TNR Homepage**.
 - Default review shortcode: `[trustindex no-registration=google]` (requires the separate Trustindex widget plugin to render reviews).
 - Embedded live TNR service-status dashboard.
+- Responsive testimonial cards read directly from published **Real Testimonials** (`testimonial-free`) entries, with optional reviewer photos, attribution, company/position and rating.
+- Testimonial heading, description, display count (1–12), and visibility under **Settings → TNR Homepage**. No additional showcase/view shortcode is needed.
 
 ### File layout
 
@@ -22,7 +24,7 @@ tnr-development-homepage/
 └── README.md
 ```
 
-The supplied 1.3.1 plugin is a **single PHP file** with its styles embedded. No separate `assets/` directory was present in that source. New features should be added to this same plugin repository, not published as extra one-function plugins.
+The 1.3.2 plugin remains a **single PHP file** with its styles embedded. No separate `assets/` directory was present in that source. New features should be added to this same plugin repository, not published as extra one-function plugins.
 
 ### Install or update manually
 
